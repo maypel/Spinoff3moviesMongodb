@@ -21,18 +21,24 @@ Les données prennent la forme de documents enregistrés eux-mêmes dans des col
 
 
    1) installation et mise en place de MongoDB Community Edition en local
-   lien de téléchargement et instruction d'installation dans le lien suivant:
+   
+   - lien de téléchargement et instruction d'installation dans le lien suivant:
    https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/#install-mongodb-community-edition
    
+   - Nous devons créer un dossier data à la racine (C:), à l'intérieur duquel nous mettrons un dossier db pour y stocker nos futurs base de données.
+   
+   - Pour lancer MongoDB, il faut ouvrir un CLI en mode Administrateur et taper la commande:
+    > "C:\Program Files\MongoDB\Server\4.4\bin\mongod.exe" --dbpath="c:\data\db"
    
    2) création d'une collection Movies et de documents à partir du CSV Movies small avec Python3
-   ==> Voir le fichier spinoff3.ipynb
+  
+  ==> Voir le fichier spinoff3.ipynb
    
    
    3) visualisation parlante suite aux scripts python et aussi sur MongoDB Compass
    
 MongoDB Compass est une interface graphique qui nous permet de visualiser les données.
-
+Avant de pouvoir l'utiliser, il faut absolument que MonogoDB soit lancer
 Exemple avec la collection movies:
 ![moviesdata](images/collection_movies.jpg)
 
